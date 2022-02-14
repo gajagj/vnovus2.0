@@ -1,0 +1,14 @@
+.loginBox {
+  width: 30%;
+  height: 15rem;
+  background-color: whiteSmoke;
+  box-shadow: 0.3rem 0.3rem #888888;
+  align-items: center;
+  margin: 6.25rem auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1rem;
+  line-height: 2rem;
+  justify-content: space-between;
+}
