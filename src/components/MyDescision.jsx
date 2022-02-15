@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react"
 import {Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from '@mui/material';
 import axios from "axios";
-import { loadMyDecisions } from "../store/reducer";
+import { actions } from "../store/reducer";
 import { useDispatch } from "react-redux";
 
 export const MyDecision=()=>{
@@ -13,7 +13,7 @@ export const MyDecision=()=>{
             console.log("response",response.data)
             if(response.data.status){
                 setDecisions(response.data.myapprovals)
-                dispatch(loadMyDecisions(response.data.myapprovals))
+                dispatch(actions.loadMyDecisions(response.data.myapprovals))
             }
         }).catch(error=>{
             console.log("error",error);

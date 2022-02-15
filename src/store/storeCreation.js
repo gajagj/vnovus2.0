@@ -4,7 +4,7 @@ import firstSlice from './reducer'
 
 export const store = configureStore({
     reducer:{
-        userName:firstSlice
+        vnovus:firstSlice
 
     }
 })
